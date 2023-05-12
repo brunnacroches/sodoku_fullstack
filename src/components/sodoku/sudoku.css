@@ -1,0 +1,84 @@
+
+
+/* ESTILOS CSS PARA O COMPONENTE SODOKU */
+
+/* Define regras globais para todos os elementos na página */
+/* Remove margens e preenchimento padrão e define box-sizing para border-box, que inclui padding e border no tamanho total do elemento */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Remove os botões de incremento e decremento dos inputs do tipo "number" no Chrome, Safari, Edge e Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Remove os botões de incremento e decremento dos inputs do tipo "number" no Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  
+  /* Define estilos para todos os elementos de entrada (inputs) */
+  input {
+    width: 100%; /* O input preenche toda a largura disponível do seu contêiner */
+    height: 100%; /* O input preenche toda a altura disponível do seu contêiner */
+    font-size: 2rem; /* Define o tamanho da fonte dos inputs */
+    text-align: center; /* Centraliza o texto dentro dos inputs */
+  }
+  
+  /* Define estilos para o elemento com a classe "root" */
+  .root {
+    display: flex; /* Define o display para flex, permitindo a disposição dos filhos em uma linha ou coluna */
+    flex-direction: column; /* Os filhos são dispostos em uma coluna */
+    gap: 1rem; /* Define um espaço entre os filhos */
+    max-width: 22rem; /* Define a largura máxima do elemento */
+  }
+  
+  /* Define estilos para o elemento com a classe "info" */
+  .info {
+    display: flex; /* Define o display para flex, permitindo a disposição dos filhos em uma linha ou coluna */
+    justify-content: center; /* Centraliza os filhos horizontalmente */
+    flex-direction: column; /* Os filhos são dispostos em uma coluna */
+    gap: 1rem; /* Define um espaço entre os filhos */
+  }
+  
+  /* Define estilos para o elemento com a classe "board" */
+  .board {
+    display: flex; /* Define o display para flex, permitindo a disposição dos filhos em uma linha ou coluna */
+    flex-direction: column; /* Os filhos são dispostos em uma coluna */
+  }
+  
+  /* Define estilos para o elemento com a classe "blocks" */
+  .blocks {
+    display: flex; /* Define o display para flex, permitindo a disposição dos filhos em uma linha */
+  }
+  
+  /* Define estilos para o elemento com a classe "block" */
+  .block {
+    border: 1px solid black; /* Adiciona uma borda ao redor do elemento */
+  }
+  
+  /* Define estilos para o elemento com a classe "boxes" */
+  .boxes {
+    display: flex; /* Define o display para flex, permitindo a disposição dos filhos em uma linha */
+  }
+  
+  /* Define estilos para o elemento com a classe "box" */
+  .box {
+    height: 2.5rem; /* Define a altura do elemento */
+    width: 2.5rem; /* Define a largura do elemento */
+  }
+  
+  /* Define estilos para o elemento com a classe "to-guess" */
+  .to-guess {
+    color: gray; /* Define a cor do texto para cinza */
+  }
+  
+  /* Define estilos para o elemento com a classe "check-answers" */
+  .check-answers {
+    /* margin-left: auto; */ /*
+  
